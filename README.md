@@ -10,13 +10,15 @@ BREADS MINDS supports district coordinators in managing mental health programs, 
 | Layer | Technology |
 |---|---|
 | Language | Java 21 |
-| Framework | Spring Boot 3.3.4 |
-| Security | Spring Security + JWT (JJWT 0.12.6) |
-| Persistence | Spring Data JPA + Hibernate |
+| Framework | Spring Boot 3.5.3 |
+| Core Framework | Spring Framework 6.2.x |
+| Security | Spring Security 6.5.x + JWT (JJWT 0.12.6) |
+| Persistence | Spring Data JPA + Hibernate 6.6.x |
 | Database | MySQL 8.x |
-| Build Tool | Maven |
-| API Docs | SpringDoc OpenAPI (Swagger UI) |
-| Utilities | Lombok, MapStruct |
+| Build Tool | Maven 3.8+ |
+| API Docs | SpringDoc OpenAPI 2.8.6 (Swagger UI) |
+| Utilities | Lombok 1.18.36, MapStruct 1.6.3 |
+| Code Coverage | JaCoCo 0.8.13 |
 
 ---
 
@@ -185,6 +187,23 @@ app:
 ```
 GET http://localhost:8080/api/actuator/health
 ```
+
+---
+
+## Dependency Versions
+
+| Dependency | Version |
+|---|---|
+| Spring Boot | 3.5.3 |
+| Spring Framework | 6.2.x (managed by Boot) |
+| Spring Security | 6.5.x (managed by Boot) |
+| Hibernate | 6.6.x (managed by Boot) |
+| JJWT | 0.12.6 |
+| SpringDoc OpenAPI | 2.8.6 |
+| Lombok | 1.18.36 |
+| MapStruct | 1.6.3 |
+| JaCoCo | 0.8.13 |
+| MySQL Connector/J | managed by Spring Boot BOM |
 
 ---
 
